@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Danh Sách Loại Hình Ảnh</title>
+    <link href="css/full-css-import.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body class="sb-nav-fixed">
+
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand" href="Default.html">Admin Manager</a>
+        <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
+        <!-- Navbar Search-->
+        <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+            <div class="input-group">
+                <input class="form-control" type="text" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2" style="height:36px;" />
+                <div class="input-group-append">
+                    <button class="btn btn-primary" style="margin-top: -1px;" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </form>
+        <!-- Navbar-->
+        <ul class="navbar-nav ml-auto ml-md-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                    <a class="dropdown-item" href="AccountEdit.html">
+                        <i class="fas fa-user-circle"></i>
+                        Admin Master
+                    </a>
+                    <a class="dropdown-item" href="AccountPasswordChange.html">
+                        <i class="fas fa-cog"></i>
+                        Đổi mật khẩu
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="Login.html">
+                        <i class="fas fa-power-off"></i>
+                        Thoát
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <a class="nav-link" href="Default.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Dashboard
+                        </a>
+
+                        <a class="nav-link" href="AccountCategoryList.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-archive"></i></div>
+                            Loại Tài Khoản
+                        </a>
+                        <a class="nav-link" href="AccountList.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
+                            Tài Khoản
+                        </a>
+
+                        <!-- Sản Phẩm Prodct -->
+                        <a class="nav-link collapsed" href="ProductList.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-cannabis"></i></div>
+                            Sản Phẩm
+                        </a>
+                        <a class="nav-link collapsed" href="ProductMainCategoryList.html">
+                            <div class="sb-nav-link-icon"></div>
+                            Loại Sản Phẩm - Cấp Cha
+
+                        </a>
+                        <a class="nav-link collapsed" href="ProductCategoryList.html">
+                            <div class="sb-nav-link-icon"></div>
+                            Loại Sản Phẩm - Cấp Con
+
+                        </a>
+
+                        <!-- Tin Tức  Picture-->
+                        <a class="nav-link collapsed" href="ArticleList.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-newspaper"></i></div>
+                            Tin Tức
+                        </a>
+                        <a class="nav-link collapsed" href="ArticleMainCategoryList.html">
+                            <div class="sb-nav-link-icon"></div>
+                            Loại Tin Tức - Cấp Cha
+                        </a>
+                        <a class="nav-link collapsed" href="ArticleCategoryList.html">
+                            <div class="sb-nav-link-icon"></div>
+                            Loại Tin Tức - Cấp Con
+                        </a>
+
+
+                        <!-- Hình Ảnh  Picture-->
+                        <a class="nav-link collapsed" href="PictureList.html">
+                            <div class="sb-nav-link-icon"><i class="far fa-image"></i></div>
+                            Hình Ảnh
+                        </a>
+                        <a class="nav-link collapsed" href="PictureMainCategoryList.html">
+                            <div class="sb-nav-link-icon"></div>
+                            Loại Hình Ảnh - Cấp Cha
+                        </a>
+                        <a class="nav-link collapsed" href="PictureCategoryList.html">
+                            <div class="sb-nav-link-icon"></div>
+                            Loại Hình Ảnh - Cấp Con
+                        </a>
+
+                        <!-- Thư Liên Hệ -->
+                        <a class="nav-link" href="ContactList.html">
+                            <div class="sb-nav-link-icon"><i class="far fa-envelope"></i></div>
+                            Thư Liên Hệ
+                        </a>
+
+                        <a class="nav-link" href="ContactCategoryList.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-envelope-open-text"></i></div>
+                            Loại Thư Liên Hệ
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid">
+                    <ol class="breadcrumb mb-4" style="cursor:pointer;">
+                        <li class="breadcrumb-item active">
+                            <a href="Default.html">Dashboard </a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <a href="PictureMainCategoryList.html">Danh Mục Hình Ảnh (Cấp Cha)</a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <a href="PictureCategoryList.html">Danh Mục Hình Ảnh (Cấp Con)</a>
+                        </li>
+                    </ol>
+
+                    <h4 style="text-align: center;font-size: 30px; margin-top: 10px; color: #747506;">
+                        LOẠI HÌNH ẢNH
+                    </h4>
+                    <div class="row-fluid">
+                        <div class="span3 card mb-4">
+                            <div class="card-header" style="cursor: pointer;">
+                                <i class="far fa-folder"></i>
+                                Loại Hình Ảnh
+                            </div>
+                            <div class="block-fluid">
+                                <!--Loại Cấp Cha + Cấp Con-->
+                                <!--Loại Cấp Cha-->
+                                <div class="row-form clearfix" style="padding: 7px 16px; ">
+                                    <select></select>
+                                    <span style="text-align: center; display: block;">Chọn Loại Cấp Cha.</span>
+                                </div>
+                                <!--Loại Cấp Con-->
+                                <div class="row-form clearfix" style="padding: 8px 16px;">
+                                    <select size="4" class="category" style="height:484px;"></select>
+                                    <span style="text-align: center; display: block;">Chọn Loại để xem.</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="span9">
+                            <div class="card mb-4">
+                                <div class="card-header" style="cursor: pointer;">
+                                    <i class="fas fa-list-ul mr-1"></i>
+                                    Chi Tiết Loại Đang Chọn
+                                    <a href="#" title="Xóa chọn" style=" float: right; margin: 0px 8px 7px 10px; font-size: 20px;">
+                                        <i class="fas fa-trash-alt mr-1"></i>
+                                    </a>
+                                    <a href="ArticleEdit.html" title="Thêm mới" style=" float: right; margin: 0px 8px 7px 10px; font-size: 20px;">
+                                        <i class="fas fa-plus-circle mr-1"></i>
+                                    </a>
+                                </div>
+
+
+                                <div class="block-fluid  customize">
+                                    <!--Chọn Loại Cấp Cha-->
+                                    <div class="row-form clearfix">
+                                        <div class="span2">
+                                            Loại Cấp Cha:
+                                        </div>
+                                        <div class="span7">
+                                            <select></select>
+                                            <span>Chọn Loại Cấp Cha của loại này.</span>
+                                        </div>
+                                    </div>
+                                    <!--Mã số + vị trí-->
+                                    <div class="row-form clearfix">
+                                        <div class="span2">
+                                            Mã Loại:
+                                        </div>
+                                        <div class="span1">
+                                            <input type="text" class="tipb" readonly="readonly" title="Mã số tự động (không cần nhập)" />
+                                        </div>
+                                        <div class="span1">
+                                            Vị trí:
+                                        </div>
+                                        <div class="span1" style="margin-left: 2px;">
+                                            <input type="text" class="tipb" title="Dùng để sắp xếp thứ tự" />
+                                        </div>
+                                        <div class="span1">
+                                            Code:
+                                        </div>
+                                        <div class="span1">
+                                            <input type="text" class="tipb" title="Dùng để tìm kiếm hoặc phân loại" />
+                                        </div>
+                                        <div class="span3">
+                                            <span>(Vị trí và Code: được phép để trống)</span>
+                                        </div>
+                                    </div>
+                                    <!--Tiêu đề-->
+                                    <div class="row-form clearfix">
+                                        <div class="span2">
+                                            Tiêu đề:
+                                        </div>
+                                        <div class="span7">
+                                            <input type="text" />
+                                            <span>VD: Tin bất động sản trong nước </span>
+                                        </div>
+                                    </div>
+                                    <!--Mô tả-->
+                                    <div class="row-form clearfix">
+                                        <div class="span2">
+                                            Mô tả:
+                                        </div>
+                                        <div class="span7">
+                                            <textarea style="min-height: 50px; width: 100%;"></textarea>
+                                            <span>Mô tả thêm. Phần mô tả sẽ hiển thị khi rê chuột vào tiêu đề Loại </span>
+                                        </div>
+                                    </div>
+                                    <!--Hình đại diện-->
+                                    <div class="row-form clearfix">
+                                        <div class="span2">
+                                            Hình đại diện:
+                                        </div>
+                                        <div class="span7">
+                                            <a href="/admin/img/no_image.png" id="content_a_Avatar" class="fancybox lightbox-preview" rel="group">
+                                                <img src="/admin/img/no_image.png" id="content_img_Avatar" alt="avatar" class="default-image img-polaroid avatar-preview" style="width: 180px; height: 135px;" />
+                                            </a>
+                                            <br />
+                                            <input type="file" class="skip" preview="avatar-preview" style="height:30px;" />
+                                            <br />
+                                            <span>
+                                                Hình đại diện cho loại tài khoản. Bạn có thể upload hình mới nếu muốn.
+                                                Các Loại file hỗ trợ: *.jpg, *.jpeg, *.gif, *.png
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!--Trạng thái-->
+                                    <div class="row-form clearfix">
+                                        <div class="span2">
+                                            Trạng thái:
+                                        </div>
+                                        <div class="span7">
+                                            <label class="checkbox inline">
+                                                <input type="radio" checked="checked" />
+                                                Cho phép hiển thị
+                                            </label>
+                                            <label class="checkbox inline">
+                                                <input type="radio" />
+                                                Tạm ẩn
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Lưu-->
+                    <div class="tar">
+                        <a class="btn btn-success">
+                            <i class="fas fa-save"></i>
+                            Lưu
+                        </a>
+                    </div>
+
+                </div>
+            </main>
+
+
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted"> Your Website Viet Y Wine 2021</div>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="assets/demo/chart-area-demo.js"></script>
+    <script src="assets/demo/chart-bar-demo.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+    <script src="assets/demo/datatables-demo.js"></script>
+</body>
+</html>
