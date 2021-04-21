@@ -1,0 +1,694 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Danh Sách Sản Phẩm</title>
+    <link href="CSS/bootstrap.css" rel="stylesheet" />
+    <link href="CSS/all.css" rel="stylesheet" />
+    <link href="CSS/owl.carousel.min.css" rel="stylesheet" />
+    <link href="CSS/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="CSS/aos.css" rel="stylesheet" />
+    <link href="CSS/hotline.css" rel="stylesheet" />
+    <link href="CSS/style.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- menu-main -->
+    <header>
+        <nav class="menu-main">
+            <div class="container">
+                <!-- Menu PC,Laptop -->
+                <ul class="nav justify-content-center menu-lg ">
+                    <li class="nav-item li-logo">
+                        <a class="nav-link" href="#">
+                            <img class="logo-main" src="Image/logo.png" />
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">TRANG CHỦ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="introduce.html">GIỚI THIỆU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productlist.html">HÃNG RƯỢU</a>
+                        <ul class="nav menu-product-category">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">MONTEVERDI 1</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">MONTEVERDI 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">MONTEVERDI 3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">MONTEVERDI 4</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="articlelist.html">TIN TỨC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">LIÊN HỆ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TÌM KIẾM</a>
+                        <ul class="nav search">
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    <div class="box">
+                                        <div class="search-box">
+                                            <input type="search" id="search" placeholder="Search..." />
+                                            <button type="button" class="icon"><i class="fa fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link minicart" href="shoppingcart.html">
+                            <i class="far fa-cart-arrow-down"></i>
+                            <span class="minicart-quantity mr-2">0</span>
+                        </a>
+                        <div class="menu-mini-cart">
+                            <div class="box-list">
+                                <ul class="list-item-cart">
+                                    <li class="cart-item">
+                                        <div>
+                                            <a class="item-img" href="#">
+                                                <img class="img-fluid" src="Image/Product/h9.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="text-left cart-info">
+                                            <a class="item-name" href="#">AMARONE DELLA VALPOLICELLA</a>
+                                            <p class="item-price">22.000.000đ</p>
+                                            <div class="cart-btn">
+                                                <a href="#" class="btn btn-minicart">-</a>
+                                                <input class="input-quantity" readonly type="text" name="name" value="1" />
+                                                <a href="#" class="btn btn-minicart">+</a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn btn-delete"><i class="fa fa-times-circle"></i></a>
+                                    </li>
+                                    <li class="cart-item">
+                                        <div>
+                                            <a class="item-img" href="#">
+                                                <img class="img-fluid" src="Image/Product/h10.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="text-left cart-info">
+                                            <a class="item-name" href="#">AMARONE DELLA VALPOLICELLA</a>
+                                            <p class="item-price">22.000.000đ</p>
+                                            <div class="cart-btn">
+                                                <a href="#" class="btn btn-minicart">-</a>
+                                                <input class="input-quantity" readonly type="text" name="name" value="1" />
+                                                <a href="#" class="btn btn-minicart">+</a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn btn-delete"><i class="fa fa-times-circle"></i></a>
+                                    </li>
+
+                                    <li class="cart-item">
+                                        <div>
+                                            <a class="item-img" href="#">
+                                                <img class="img-fluid" src="Image/Product/h12.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="text-left cart-info">
+                                            <a class="item-name" href="#">AMARONE DELLA VALPOLICELLA</a>
+                                            <p class="item-price">22.000.000đ</p>
+                                            <div class="cart-btn">
+                                                <a href="#" class="btn btn-minicart">-</a>
+                                                <input class="input-quantity" readonly type="text" name="name" value="1" />
+                                                <a href="#" class="btn btn-minicart">+</a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn btn-delete"><i class="fa fa-times-circle"></i></a>
+                                    </li>
+                                    <li class="cart-item">
+                                        <div>
+                                            <a class="item-img" href="#">
+                                                <img class="img-fluid" src="Image/Product/h13.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="text-left cart-info">
+                                            <a class="item-name" href="#">AMARONE DELLA VALPOLICELLA</a>
+                                            <p class="item-price">22.000.000đ</p>
+                                            <div class="cart-btn">
+                                                <a href="#" class="btn btn-minicart">-</a>
+                                                <input class="input-quantity" readonly type="text" name="name" value="1" />
+                                                <a href="#" class="btn btn-minicart">+</a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn btn-delete"><i class="fa fa-times-circle"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="subtotal">
+                                TỔNG TIỀN:<span class="sum_price">10.000.000₫</span>
+                            </div>
+                            <div class="cart-link">
+                                <div class="link-cart"><a href="shoppingcart.html"><i class="fas fa-shopping-cart mr-2"></i><span>Xem giỏ hàng</span><i class="far fa-arrow-alt-right ml-2"></i></a></div>
+                                <div class="link-cart"><a href="checkout.html"><i class="fas fa-money-bill-wave mr-2"></i><span>thanh toán</span><i class="far fa-arrow-alt-right ml-2"></i></a></div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+                <!-- Menu Tablet-mobile -->
+                <div class="menu-mobile">
+                    <div class="logo-mobile">
+                        <a href="#">
+                            <img class="logo-main-mobile" src="Image/logo.png" />
+                        </a>
+                    </div>
+                    <div class="minicart-mobile">
+                        <a class="minicart" href="shoppingcart.html">
+                            <i class="fal fa-shopping-cart">
+                                <span class="minicart-quantity minicart-quantity-mobile">0</span>
+                            </i>
+                        </a>
+                    </div>
+                    <div class="btn-menu">
+                        <input id="input-menu-mobile" hidden type="checkbox" />
+                        <label for="input-menu-mobile">
+                            <i class="fa fa-bars btn-menu-mobile"></i>
+                        </label>
+
+                        <label for="input-menu-mobile" class="overlay-fullscreen"></label>
+                        <div class="menu-category">
+                            <div class="menu-category-top">
+                                <div class="logo-menu-category">
+                                    <img class="logo-main-mobile" src="Image/logo.png" />
+                                </div>
+                                <label for="input-menu-mobile" class="btn-mobile-close">
+                                    <i class="fa fa-times"></i>
+                                </label>
+                            </div>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="index.html">
+                                        <div class="icon-menu-item"> <i class="fas fa-home-lg-alt"></i></div>
+                                        <span class="title-menu-item"> TRANG CHỦ</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="introduce.html">
+                                        <span class="icon-menu-item"> <i class="fas fa-address-card"></i></span>
+                                        <span class="title-menu-item"> GIỚI THIỆU</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">
+                                        <button type="button" class="bt-mobile-category" data-toggle="collapse" data-target="#product-mobile-category">
+                                            <span class="icon-menu-item"><i class="far fa-holly-berry"></i></span>
+                                            <span class="title-menu-item">
+                                                HÃNG RƯỢU
+                                                <i class="fal fa-plus icon-plus"></i>
+                                            </span>
+                                        </button>
+                                    </a>
+
+                                    <ul class="nav flex-column collapse product-mobile-category" id="product-mobile-category">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><i class="fas fa-glass-cheers"></i>MONTEVERDI 1</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><i class="fas fa-glass-cheers"></i>MONTEVERDI 2</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><i class="fas fa-glass-cheers"></i>MONTEVERDI 3</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><i class="fas fa-glass-cheers"></i>MONTEVERDI 4</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="articlelist.html">
+                                        <span class="icon-menu-item"> <i class="fas fa-newspaper"></i></span>
+                                        <span class="title-menu-item">TIN TỨC</span>
+
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">
+                                        <span class="icon-menu-item"><i class="fas fa-phone-office"></i></span>
+                                        <span class="title-menu-item">LIÊN HỆ</span>
+
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">
+                                        <div class="box">
+                                            <div class="search-box">
+                                                <input type="search" id="search" placeholder="Search..." />
+                                                <button type="button" class="icon"><i class="fa fa-search"></i></button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ProductList -->
+    <div class="group" style="width: 80%; margin: auto;">
+        <div class="TrangChu">
+            <a href="index.html">Trang Chủ</a>
+            <span>/</span>
+            <a href="productlist.html">Sản Phẩm</a>
+        </div>
+        <div class="MenuCoff">
+            <h1>MONTEVERDI</h1>
+            <div class="directIcon">
+                <i class='fas fa-seedling' style='font-size:36px'></i>
+            </div>
+        </div>
+    </div>
+    <div class="groupSearch-Sort">
+        <div class="group-Sort">
+            <div>
+                <h3>Theo giá</h3>
+            </div>
+            <select class="form-Control-SanPham" id="Filter-SanPham">
+                <option value="null">
+                    <p>Không lựa chọn</p>
+                </option>
+                <option value="DownToUp">
+                    <p>Từ thấp đến cao</p>
+                </option>
+                <option value="UptoDown">
+                    <p>Từ cao đến thấp</p>
+                </option>
+            </select>
+        </div>
+      
+    </div>
+    <section class="container animatedParent" data-sequence='500' id="product-list">
+        <ul class="row animated bounceInRight slowest" data-id='3'>
+            <li class="col-6 col-md-3">
+                <a href="#">
+                    <img class="img-fluid" src="Image/Product/h1.jpg" />
+                </a>
+                <a href="#">
+                    Vang Septima Obra Reserva Malbec
+                </a>
+                <br />
+                <strong>5,750,000đ</strong>
+
+                <a class="tool" href="#">
+                    <i class="fa fa-cart-plus mr-1" style="margin-left: 4px; color: #fff;">
+                        Thêm Vào Giỏ
+                    </i>
+                </a>
+            </li>
+
+            <li class="col-6 col-md-3">
+                <a href="#">
+                    <img class="img-fluid" src="Image/Product/h3.jpg" />
+                </a>
+                <a href="#">
+                    Vang Septima Obra Reserva Malbec
+                </a>
+                <br />
+                <strong>5,750,000đ</strong>
+
+                <a class="tool" href="#">
+                    <i class="fa fa-cart-plus mr-1" style="margin-left: 4px; color: #fff;">
+                        Mua Hàng
+                    </i>
+                </a>
+            </li>
+
+
+            <li class="col-6 col-md-3">
+                <a href="#">
+                    <img class="img-fluid" src="Image/Product/h5.jpg" />
+                </a>
+                <a href="#">
+                    Vang Septima Obra Reserva Malbec
+                </a>
+                <br />
+                <strong>5,750,000đ</strong>
+
+                <a class="tool" href="#">
+                    <i class="fa fa-cart-plus mr-1" style="margin-left: 4px; color: #fff;">
+                        Mua Hàng
+                    </i>
+                </a>
+            </li>
+
+            <li class="col-6 col-md-3">
+                <a href="#">
+                    <img class="img-fluid" src="Image/Product/h6.jpg" />
+
+                </a>
+                <a href="#">
+                    Vang Septima Obra Reserva Malbec
+                </a>
+                <br />
+                <strong>5,750,000đ</strong>
+
+                <a class="tool" href="#">
+                    <i class="fa fa-cart-plus mr-1" style="margin-left: 4px; color: #fff;">
+                        Mua Hàng
+                    </i>
+                </a>
+            </li>
+
+            <li class="col-6 col-md-3">
+                <a href="#">
+                    <img class="img-fluid" src="Image/Product/h7.jpg" />
+
+                </a>
+                <a href="#">
+                    Vang Septima Obra Reserva Malbec
+                </a>
+                <br />
+                <strong>5,750,000đ</strong>
+                <div class="tool">
+                    <a href="#">
+                        <i class="fa fa-eye mr-1" style="margin-left: 4px; color: #fff;">
+                            Xem Nhanh
+                        </i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa fa-cart-plus mr-1" style="margin-left: 4px; color: #fff;">
+                            Mua Hàng
+                        </i>
+                    </a>
+                </div>
+            </li>
+            <li class="col-6 col-md-3">
+                <a href="#">
+                    <img class="img-fluid" src="Image/Product/h8.jpg" />
+
+                </a>
+                <a href="#">
+                    Vang Septima Obra Reserva Malbec
+                </a>
+                <br />
+                <strong>5,750,000đ</strong>
+                <a class="tool" href="#">
+                    <i class="fa fa-cart-plus mr-1" style="margin-left: 4px; color: #fff;">
+                        Mua Hàng
+                    </i>
+                </a>
+            </li>
+            <li class="col-6 col-md-3">
+                <a href="#">
+                    <img class="img-fluid" src="Image/Product/h9.jpg" />
+
+                </a>
+                <a href="#">
+                    Vang Septima Obra Reserva Malbec
+                </a>
+                <br />
+                <strong>5,750,000đ</strong>
+                <div class="tool">
+                    <a href="#">
+                        <i class="fa fa-eye mr-1" style="margin-left: 4px; color: #fff;">
+                            Xem Nhanh
+                        </i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa fa-cart-plus mr-1" style="margin-left: 4px; color: #fff;">
+                            Mua Hàng
+                        </i>
+                    </a>
+                </div>
+            </li>
+            <li class="col-6 col-md-3">
+                <a href="#">
+                    <img class="img-fluid" src="Image/Product/h10.jpg" />
+
+                </a>
+                <a href="#">
+                    Vang Septima Obra Reserva Malbec
+                </a>
+                <br />
+                <strong>5,750,000đ</strong>
+                <div class="tool">
+                    <a href="#">
+                        <i class="fa fa-eye mr-1" style="margin-left: 4px; color: #fff;">
+                            Xem Nhanh
+                        </i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa fa-cart-plus mr-1" style="margin-left: 4px; color: #fff;">
+                            Mua Hàng
+                        </i>
+                    </a>
+                </div>
+            </li>
+            <li class="col-6 col-md-3">
+                <a href="#">
+                    <img class="img-fluid" src="Image/Product/h11.jpg" />
+
+                </a>
+                <a href="#">
+                    Vang Septima Obra Reserva Malbec
+                </a>
+                <br />
+                <strong>5,750,000đ</strong>
+                <div class="tool">
+                    <a href="#">
+                        <i class="fa fa-eye mr-1" style="margin-left: 4px; color: #fff;">
+                            Xem Nhanh
+                        </i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa fa-cart-plus mr-1" style="margin-left: 4px; color: #fff;">
+                            Mua Hàng
+                        </i>
+                    </a>
+                </div>
+            </li>
+            <li class="col-6 col-md-3">
+                <a href="#">
+                    <img class="img-fluid" src="Image/Product/h12.jpg" />
+
+                </a>
+                <a href="#">
+                    Vang Septima Obra Reserva Malbec
+                </a>
+                <br />
+                <strong>5,750,000đ</strong>
+                <div class="tool">
+                    <a href="#">
+                        <i class="fa fa-eye mr-1" style="margin-left: 4px; color: #fff;">
+                            Xem Nhanh
+                        </i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa fa-cart-plus mr-1" style="margin-left: 4px; color: #fff;">
+                            Mua Hàng
+                        </i>
+                    </a>
+                </div>
+            </li>
+            <li class="col-6 col-md-3">
+                <a href="#">
+                    <img class="img-fluid" src="Image/Product/h15.jpg" />
+
+                </a>
+                <a href="#">
+                    Vang Septima Obra Reserva Malbec
+                </a>
+                <br />
+                <strong>5,750,000đ</strong>
+                <div class="tool">
+                    <a href="#">
+                        <i class="fa fa-eye mr-1" style="margin-left: 4px; color: #fff;">
+                            Xem Nhanh
+                        </i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa fa-cart-plus mr-1" style="margin-left: 4px; color: #fff;">
+                            Mua Hàng
+                        </i>
+                    </a>
+                </div>
+            </li>
+            <li class="col-6 col-md-3">
+                <a href="#">
+                    <img class="img-fluid" src="Image/Product/h14.jpg" />
+
+                </a>
+                <a href="#">
+                    Vang Septima Obra Reserva Malbec
+                </a>
+                <br />
+                <strong>5,750,000đ</strong>
+                <div class="tool">
+                    <a href="#">
+                        <i class="fa fa-eye mr-1" style="margin-left: 4px; color: #fff;">
+                            Xem Nhanh
+                        </i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa fa-cart-plus mr-1" style="margin-left: 4px; color: #fff;">
+                            Mua Hàng
+                        </i>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!-- Paging -->
+   
+        <div class="pagination">
+            <ul class="pagination modal-1">
+                <li><a href="#" class="prev">&laquo</a></li>
+                <li><a href="#" class="active">1</a></li>
+                <li> <a href="#">2</a></li>
+                <li> <a href="#">3</a></li>
+                <li> <a href="#">4</a></li>
+                <li> <a href="#">5</a></li>
+                <li> <a href="#">6</a></li>
+                <li> <a href="#">7</a></li>
+                <li> <a href="#">8</a></li>
+                <li> <a href="#">9</a></li>
+                <li><a href="#" class="next">&raquo;</a></li>
+            </ul>
+        </div>
+    
+    <div class="HotLine">
+        <div class="quick-call-button"></div>
+        <div class="call-now-button" id="draggable">
+            <div>
+                <p class="call-text"> <b>CALL: 0988.191.800</b> </p>
+                <a href="tel:0763557366" id="quickcallbutton" title=" Call Now">
+                    <div class="quick-alo-ph-circle active"></div>
+                    <div class="quick-alo-ph-circle-fill active"></div>
+                    <div class="quick-alo-ph-img-circle shake"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-3 menu">
+                    <h5>
+                        VỀ CHÚNG TÔI
+                    </h5>
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <i class="fas fa-home-lg-alt"></i> Trang Chủ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="introduce.html">
+                                <i class="fas fa-address-card"></i> Giới thiệu
+                            </a>
+                        </li>
+                        <li>
+                            <a href="productlist.html">
+                                <i class="far fa-holly-berry"></i> Hãng rượu
+                            </a>
+                        </li>
+                        <li>
+                            <a href="articlelist.html">
+                                <i class="fas fa-newspaper"></i> Tin tức
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                <i class="fas fa-phone-office"></i> Liên hệ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 text-center" style="cursor:pointer;">
+                    <h4 class="com-name">CÔNG TY TNHH TM &amp; XD RƯỢU VANG VIỆT Ý WINE</h4>
+                    <p class="com-phone">
+                        <i class="fa fa-phone"></i>
+                        Liên Hệ Tư Vấn: 024.2269.6999
+                    </p>
+                    <p class="com-email">
+                        <i class="fa fa-envelope"></i>
+                        Email: vietywine@vietygroup.vn
+
+                    </p>
+                    <address class="com-address">
+                        <i class="fa fa-map-marker"></i>
+                        74 Nam Đồng, Đống Đa, Hà Nội
+                    </address>
+                </div>
+                <div class="col-3 social">
+                    <h5>
+                        KẾT NỐI VỚI CHÚNG TÔI
+                    </h5>
+                    <ul>
+
+                        <li>
+                            <a href="https://www.facebook.com/VietYWine/">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCixSUp2qEitVP2Z2LgU4GBA/featured">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/VietYWine/">
+                                <i class="fab fa-twitter"></i>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:vietywine@vietygroup.vn">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr />
+            <p class="Copyright">Copyright Nhóm 4 - D17C01A</p>
+        </div>
+    </footer>
+    <!-- Script -->
+    <section id="script">
+        <script src="Scripts/popper.js"></script>
+        <!-- file popper phải đứng trước file jquery -->
+        <script src="Scripts/jquery-3.4.1.js"></script>
+        <!-- file jquery phải đứng trước file bootstrap -->
+        <script src="Scripts/bootstrap.js"></script>
+        <!-- file bootstrap phải đứng sau file jquery vì nó là thư viện của jquery -->
+        <script src="Scripts/owl.carousel.min.js"></script>
+        <script src="Scripts/aos.js"></script>
+        <!-- file script lun đứng sau cùng -->
+        <script src="Scripts/scrip.js"></script>
+
+    </section>
+</body>
+</html>
